@@ -18,10 +18,8 @@ namespace githubAlgoritma
             int sonuc = RecursiveBinaryArama(dizi, aranan, left, right);
             if (sonuc != -1) Console.WriteLine("Aranan {0} sayısi {1}. indekste bulundu", aranan, sonuc);
             else Console.WriteLine("Aranan sayı bulunamadı");
-
-
-
         }
+        
         static int RecursiveBinaryArama(int[] dizi, int aranan, int left, int right)
         {
             if (left <= right)
@@ -37,3 +35,4 @@ namespace githubAlgoritma
         }
     }
 }
+
