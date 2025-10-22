@@ -10,7 +10,6 @@ namespace githubAlgoritma
     {
         static void Main(string[] args)
         {
-
             // normal çözüm
             Console.WriteLine("Normal Çözüm");
             int[] dizi = { 2, 4, 6, 8, 10, 12, 14, 16, 18, 20 };
@@ -25,16 +24,12 @@ namespace githubAlgoritma
             Console.WriteLine();
             Console.WriteLine("Recursive Çözüm");
 
-          
             int left = 0;
             int right = dizi.Length - 1;
 
             int recursivesonuc = RecursiveBinaryArama(dizi, aranan, left, right);
             if (recursivesonuc != -1) Console.WriteLine("Aranan {0} sayısi {1}. indekste bulundu", aranan, recursivesonuc);
             else Console.WriteLine("Aranan sayı bulunamadı");
-
-
-
         }
 
         static int BinaryArama(int[] dizi, int aranan)
@@ -75,3 +70,4 @@ namespace githubAlgoritma
         }
     }
 }
+
